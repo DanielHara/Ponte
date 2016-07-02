@@ -1,0 +1,23 @@
+
+public class Senha_Par implements Autenticavel{
+	
+	private int senha;
+	
+	public void SetSenha (int senha)
+	{
+		if (senha%2 == 0)
+			this.senha = senha;
+		else System.out.println("Entrada inválida. A senha deve ser um número par!");
+	}
+	
+	public boolean Autenticar (int senha)
+	{
+		return (this.senha == senha);
+	}
+	
+	public int getSenha ()
+	{
+		return senha;
+	}
+	
+}
