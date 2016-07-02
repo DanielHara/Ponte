@@ -1,0 +1,8 @@
+
+public interface Autenticavel {
+
+	public boolean Autenticar (int senha);
+	public void SetSenha (int senha);
+	public int getSenha ();
+	
+}
