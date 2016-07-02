@@ -1,0 +1,26 @@
+
+public abstract class Funcionario {
+
+	protected Autenticavel autenticavel;
+	
+	protected String Nome;
+	protected int Salario;
+	
+	protected Funcionario (Autenticavel autenticavel)
+	{
+		this.autenticavel = autenticavel;
+	}
+	
+	public void SetNome (String Nome)
+	{
+		this.Nome = Nome;
+	}
+	
+	public void SetSalario (int Salario)
+	{
+		this.Salario = Salario;
+	}
+	
+	public abstract int getImpostos ();
+	
+}
