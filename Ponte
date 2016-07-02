@@ -1,0 +1,18 @@
+
+public class Ponte {
+	public static void main (String[] args)
+	{
+		Gerente A = new Gerente ("Anderson", 2000, new Senha_Par());
+		Diretor B = new Diretor ("Bruno", 10000, new Senha_Impar());
+		
+		A.autenticavel.SetSenha(1210);
+		
+		B.autenticavel.SetSenha(1211);
+		
+		System.out.println("Anderson paga " + A.getImpostos() + " em impostos");
+		System.out.println("A senha de Anderson é:" + A.autenticavel.getSenha());
+		
+		System.out.println("Bruno paga " + B.getImpostos() + " em impostos");
+		System.out.println("A senha de Bernardo é:" + B.autenticavel.getSenha());
+	}
+}
