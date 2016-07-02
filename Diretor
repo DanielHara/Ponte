@@ -1,0 +1,16 @@
+
+public class Diretor extends Funcionario{
+	
+	public Diretor (String Nome, int Salario, Autenticavel autenticavel)
+	{
+		super (autenticavel);
+		SetNome(Nome);
+		SetSalario(Salario);
+	}
+	
+	public int getImpostos ()
+	{
+		return (int) (Salario * 0.4);
+	}
+	
+}
